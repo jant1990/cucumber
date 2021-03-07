@@ -1,0 +1,22 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+group = 'com.seleniumeuropcar'
+version = '0.0.1-SNAPSHOT'
+
+description = "Selenium Cucumber"
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+repositories {
+
+    maven { url "https://repo.maven.apache.org/maven2" }
+}
+dependencies {
+    testCompile "io.cucumber:cucumber-java:6.9.1"
+    testCompile "io.cucumber:cucumber-junit:6.9.1"
+    testCompile "junit:junit:4.13.1"
+    testCompile "com.codeborne:selenide:5.18.0"
+    testCompile "org.slf4j:slf4j-simple:1.7.30"
+}
